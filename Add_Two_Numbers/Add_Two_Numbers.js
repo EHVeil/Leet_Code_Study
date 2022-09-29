@@ -6,7 +6,7 @@
  * }
  */
 
-var addTwoNumbers = function(l1, l2) {
+ var addTwoNumbers = function(l1, l2) {
   //iterate through the linked lists
   var iterator = function(node) {
     //take the current number and concatenate the previously concatenated or first number onto it
@@ -19,7 +19,8 @@ var addTwoNumbers = function(l1, l2) {
     return conNum;
   };
   //do this for both lists to determine the numbers represented by them
-  var result = parseInt(iterator(l1)) + parseInt(iterator(l2));
+  //if the number is 31 or more characters
+  var result = parseInt(iterator(l1)) + parseInt(iterator(l2))
   result = result.toString();
   var finalLL;
   for (var i = 0; i < result.length; i++) {
